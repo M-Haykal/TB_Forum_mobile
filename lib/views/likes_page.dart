@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tb_forum/views/message_page.dart';
 import 'package:tb_forum/views/setting_page.dart';
 import 'package:tb_forum/views/profile_page.dart';
 import 'package:tb_forum/views/home_page.dart';
@@ -32,7 +33,7 @@ class ProductCard extends StatelessWidget {
   }
 }
 
-class MessagePage extends StatelessWidget {
+class likesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,10 +41,10 @@ class MessagePage extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         title: Container(
-          height: 40, // Sesuaikan dengan tinggi yang diinginkan
+          height: 40, 
           child: Image.asset(
             'assets/images/logo.png',
-            fit: BoxFit.contain, // Sesuaikan dengan gaya yang diinginkan
+            fit: BoxFit.contain, 
           ),
         ),
         centerTitle: true,
@@ -87,7 +88,7 @@ class MessagePage extends StatelessWidget {
                 Navigator.pop(context); // Close the drawer
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Text('Halaman Like')),
+                  MaterialPageRoute(builder: (context) => likesPage()),
                 );
               },
             ),
@@ -119,20 +120,20 @@ class MessagePage extends StatelessWidget {
       body: ListView(
         children: [
           ProductCard(
-            name: 'rafiramzi2',
-            description: 'Welcome to Taruna Bhakti Vocational High School',
-            imageUrl: 'https://cdn-icons-png.flaticon.com/512/2919/2919906.png',
+            name: 'Haii Tb_forum',
+            description: 'rafiramzi2 menyukai konten anda',
+            imageUrl: 'assets/images/smk.jpg',
           ),
           ProductCard(
-            name: 'andyto',
-            description: 'Schools with accreditation A',
-            imageUrl: 'https://cdn-icons-png.flaticon.com/512/2919/2919906.png',
+            name: 'Haii Tb_forum',
+            description: 'andyto menyukai konten anda',
+            imageUrl: 'assets/images/smk.jpg',
           ),
           ProductCard(
-            name: 'rafifitro',
+            name: 'Haii Tb_forum',
             description:
-                'School with the best Information Technology in depok city',
-            imageUrl: 'https://cdn-icons-png.flaticon.com/512/2919/2919906.png',
+                'rafiftro menyukai konten anda',
+            imageUrl: 'assets/images/smk.jpg',
           ),
         ],
       ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tb_forum/views/profile_page.dart';
 import 'package:tb_forum/views/message_page.dart';
 import 'package:tb_forum/views/setting_page.dart';
+import 'package:tb_forum/views/likes_page.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -95,7 +96,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.pop(context); // Close the drawer
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Text('Halaman Like')),
+                  MaterialPageRoute(builder: (context) => likesPage()),
                 );
               },
             ),
